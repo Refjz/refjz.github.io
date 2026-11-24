@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zip Explorer Privacy Policy</title>
+<style>
+:root{--bg:#ffffff;--fg:#1d2330;--muted:#5a6474;--link:#1e6fd9;--line:#e3e9f2}
+@media (prefers-color-scheme:dark){:root{--bg:#14171c;--fg:#e8ebf0;--muted:#9aa4b2;--link:#6fa8ff;--line:#2a3039}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:28px;margin:0 0 4px}h2{font-size:20px;margin:32px 0 8px;padding-top:16px;border-top:1px solid var(--line)}
+p,li{color:var(--fg)}.muted{color:var(--muted)}a{color:var(--link)}
+table{border-collapse:collapse;width:100%;font-size:15px}td,th{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+</style>
+</head>
+<body>
+<main>
+<h1>Zip Explorer Privacy Policy</h1>
+<p class="muted">Last updated: November 25, 2026 · App ID: id.zipexplorer.app</p>
+
+<p>Zip Explorer is a file manager and archive tool for Android. This policy explains what data the app handles, where it goes, and the choices you have. In short: <b>your files stay on your device or go only to services you connect yourself. The developer does not run any server that receives your files, account details, or usage data.</b></p>
+
+<h2>1. Files on your device</h2>
+<p>To browse, open, extract, compress, copy, and clean files, the app needs access to your storage (on Android 11 and later, the "All files access" permission). Files are processed only on your device. The app does not upload them anywhere unless you choose a cloud, network, or Wi-Fi transfer feature yourself.</p>
+<p>The Vault encrypts files you put in it with AES-256-GCM using a key derived from your PIN. Vault contents and keys never leave the device and are excluded from Android backups.</p>
+
+<h2>2. Cloud accounts you connect (Google Drive, Dropbox)</h2>
+<p>If you sign in to Google Drive or Dropbox, the app receives an access token from that provider and stores it privately on your device. It is excluded from Android backups. The app uses it only to list, download, upload, and manage the files you choose, and to show the email address of the connected account. File data travels directly between your device and the provider. It does not pass through any server of ours.</p>
+<ul>
+<li><b>Google Drive</b> uses the <code>drive</code> scope so you can browse and manage all files in your Drive, plus your email address to label the account.</li>
+<li><b>Dropbox</b> uses read-only access (<code>files.metadata.read</code>, <code>files.content.read</code>, <code>account_info.read</code>).</li>
+</ul>
+<p>Zip Explorer's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is not used for advertising, is not sold, is not transferred to anyone else, and is not read by humans.</p>
+<p>You can disconnect an account at any time in the app (long-press the account, then remove). This deletes the token from the device. You can also revoke access in your <a href="https://myaccount.google.com/permissions">Google account</a> or <a href="https://www.dropbox.com/account/connected_apps">Dropbox settings</a>.</p>
+
+<h2>3. Network servers and Wi-Fi transfer</h2>
+<p>Addresses, usernames, and passwords for FTP, SFTP, SMB, and WebDAV servers you add are stored only on your device and are excluded from backups. Wi-Fi Transfer and the FTP server run on your local network, protected by a PIN shown on your phone. They stop when you turn them off.</p>
+
+<h2>4. Camera and other permissions</h2>
+<table>
+<tr><th>Permission</th><th>Why</th></tr>
+<tr><td>Camera</td><td>Only for the QR/barcode scanner. Images are processed on the device and not stored or sent.</td></tr>
+<tr><td>Nearby Wi-Fi devices / location (Android 12 and older)</td><td>Only for phone-to-phone Wi-Fi Direct transfer. The app does not read or store your location.</td></tr>
+<tr><td>Install / delete apps</td><td>To install APK files you open and to uninstall apps you choose. Android always asks you to confirm.</td></tr>
+<tr><td>Notifications</td><td>To show progress for long tasks such as extracting or copying.</td></tr>
+<tr><td>Modify system settings, wallpaper</td><td>Only when you use "Set as ringtone" or "Set as wallpaper".</td></tr>
+</table>
+
+<h2>5. Advertising (Google AdMob)</h2>
+<p>The free version shows ads from Google AdMob. Google may collect and use your device's advertising ID, IP address (to estimate approximate location), app interaction data, and diagnostics to show ads, measure them, and prevent fraud. See <a href="https://policies.google.com/technologies/ads">How Google uses information from sites or apps that use its services</a>.</p>
+<ul>
+<li>In the European Economic Area, the United Kingdom, and Switzerland, the app asks for your consent before ads are personalized, using Google's consent form.</li>
+<li>In US states with privacy laws (such as California), you can opt out of the sale or sharing of personal information.</li>
+<li>Where a choice is required, you can change it any time in <b>Settings › Ad privacy options</b>.</li>
+<li>You can reset or delete your advertising ID in your phone's Android settings.</li>
+</ul>
+
+<h2>6. Purchases</h2>
+<p>"Remove ads" is a one-time purchase through Google Play. Payment is handled entirely by Google. The app only receives confirmation that the purchase belongs to your Google account, so ads can stay off and the purchase can be restored.</p>
+
+<h2>7. Data we collect</h2>
+<p>The developer does not collect, store, or sell personal data. Apart from the third parties above (Google AdMob, Google Play, and the cloud services you connect yourself), the app has no analytics, no crash reporting service, and no server of its own.</p>
+
+<h2>8. Data retention and deletion</h2>
+<p>All app data (settings, tokens, server passwords, vault, trash, history) is stored on your device. Uninstalling the app or clearing its storage deletes it. To delete data held by Google for advertising, use your Google account settings.</p>
+
+<h2>9. Children</h2>
+<p>Zip Explorer is not directed at children under 13 and does not knowingly collect data from them.</p>
+
+<h2>10. Security</h2>
+<p>Connections to Google, Dropbox, and AdMob use HTTPS. Vault files are encrypted. Wi-Fi Transfer uses a PIN and blocks repeated wrong guesses.</p>
+
+<h2>11. Changes</h2>
+<p>If this policy changes, the new version will be posted on this page with a new date.</p>
+
+<h2>12. Contact</h2>
+<p>Questions or requests: <a href="mailto:rian.hadi.w@gmail.com">rian.hadi.w@gmail.com</a></p>
+</main>
+</body>
+</html>
