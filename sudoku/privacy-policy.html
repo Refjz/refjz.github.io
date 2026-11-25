@@ -1,0 +1,207 @@
+<title>Sudoku ZidnySoft Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: single reading column, a 3x3 grid mark echoing the Sudoku board, language switch at top */
+:root{
+  --bg:#f7f8fb; --fg:#1d2433; --muted:#5b6478; --line:#d9deea; --accent:#2f5bd3; --panel:#ffffff;
+  --display:"Fraunces",Georgia,serif; --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121620;--fg:#e6e9f2;--muted:#a1a9bc;--line:#2a3142;--accent:#8aa8ff;--panel:#1a2030;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#121620;--fg:#e6e9f2;--muted:#a1a9bc;--line:#2a3142;--accent:#8aa8ff;--panel:#1a2030;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:17px/1.65 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+main{max-width:680px;margin:0 auto}
+header{display:flex;gap:18px;align-items:center;margin-bottom:8px}
+.mark{display:grid;grid-template-columns:repeat(3,14px);gap:2px;flex:none}
+.mark i{width:14px;height:14px;border:1.5px solid var(--accent);border-radius:2px}
+.mark i:nth-child(5){background:var(--accent)}
+h1{font:600 clamp(28px,6vw,38px)/1.15 var(--display);margin:0;text-wrap:balance}
+.meta{color:var(--muted);font-size:15px;margin:4px 0 24px}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:3px;gap:3px;margin-bottom:28px;background:var(--panel)}
+.lang button{font:600 14px var(--body);border:0;background:none;color:var(--muted);padding:6px 14px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--accent);color:var(--bg)}
+.lang button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h2{font:600 21px/1.3 var(--display);margin:32px 0 6px}
+p,li{margin:0 0 10px}
+ul{padding-left:22px;margin:0 0 10px}
+.summary{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px 20px;margin-bottom:8px}
+.summary p{margin:0}
+.email{font-weight:600;user-select:all}
+footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+</style>
+
+<main>
+  <header>
+    <div class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <h1 data-lang="id">Kebijakan Privasi Sudoku</h1>
+    <h1 data-lang="en" hidden>Sudoku Privacy Policy</h1>
+  </header>
+  <p class="meta" data-lang="id">ZidnySoft · Berlaku sejak 25 November 2026 · Paket: com.zidnysoft.sudoku</p>
+  <p class="meta" data-lang="en" hidden>ZidnySoft · Effective 25 November 2026 · Package: com.zidnysoft.sudoku</p>
+
+  <div class="lang" role="group" aria-label="Bahasa / Language">
+    <button id="btn-id" type="button" aria-pressed="true" data-set="id">Bahasa Indonesia</button>
+    <button id="btn-en" type="button" aria-pressed="false" data-set="en">English</button>
+  </div>
+
+  <section data-lang="id">
+    <div class="summary"><p><strong>Ringkasnya:</strong> Sudoku menampilkan iklan dari Google AdMob untuk membiayai pengembangan. Google dapat memakai ID iklan perangkat Anda untuk iklan tersebut. Fitur online (klub dan duel langsung) mengirim nama panggilan dan poin Anda ke server kami di Google Firebase. Kami tidak menjual data pribadi Anda.</p></div>
+
+    <h2>Siapa kami</h2>
+    <p>Sudoku dibuat oleh ZidnySoft, pengembang perorangan di Indonesia, yang menjadi pengendali data untuk data yang dijelaskan di sini. Hubungi kami lewat email di bagian Kontak.</p>
+
+    <h2>Data yang disimpan di perangkat Anda</h2>
+    <p>Agar permainan bisa dilanjutkan, aplikasi menyimpan data berikut di memori perangkat Anda:</p>
+    <ul>
+      <li>Progres permainan, skor, statistik, pencapaian, dan level Arcade</li>
+      <li>Koin, item, dan skin yang Anda dapatkan di dalam game</li>
+      <li>Pengaturan seperti bahasa, tema, suara, dan jam pengingat</li>
+    </ul>
+    <p>Foto yang Anda pakai untuk fitur Scan soal diproses di perangkat saja dan tidak dikirim ke mana pun.</p>
+
+    <h2>Iklan (Google AdMob)</h2>
+    <p>Aplikasi menampilkan banner di menu, iklan layar penuh sesekali setelah Anda menang, dan iklan berhadiah yang hanya muncul bila Anda memilih menontonnya (misalnya untuk petunjuk atau nyawa tambahan). Iklan disediakan oleh Google AdMob. Untuk menampilkan dan mengukur iklan serta mencegah penipuan, SDK Google Mobile Ads dapat mengumpulkan:</p>
+    <ul>
+      <li>ID iklan Android (Advertising ID) dan ID aplikasi lain dari Google</li>
+      <li>Alamat IP dan perkiraan lokasi (negara/kota) dari alamat IP tersebut</li>
+      <li>Informasi perangkat (model, versi Android, bahasa) dan interaksi dengan iklan, termasuk data diagnostik dan crash SDK</li>
+    </ul>
+    <p>Data ini dikirim langsung ke Google dan diolah sesuai <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a> serta <a href="https://policies.google.com/technologies/partner-sites">cara Google memakai data dari aplikasi partner</a>. Di Wilayah Ekonomi Eropa, Inggris, Swiss, dan wilayah lain yang mewajibkannya, aplikasi meminta persetujuan Anda lebih dulu lewat formulir persetujuan Google, dan Anda dapat mengubah pilihan kapan saja lewat Pengaturan → Pengaturan privasi iklan. Anda juga dapat mengatur ulang atau menghapus ID iklan di Pengaturan Android → Google → Iklan.</p>
+
+    <h2>Fitur online (Google Firebase)</h2>
+    <p>Klub online dan duel langsung memakai Google Firebase (Authentication dan Realtime Database, server di Singapura). Bila Anda memakai fitur ini, aplikasi membuat akun anonim (tanpa email atau nama asli) dan menyimpan di server: ID anonim, nama panggilan yang Anda tulis, nama dan kode klub, poin mingguan, serta data ruang duel (soal, kemajuan, hasil). Data ini hanya dipakai untuk menjalankan fitur tersebut. Nama panggilan dan nama klub terlihat oleh pemain lain, jadi jangan memakai nama asli atau info pribadi; kata kasar dalam 14 bahasa disaring otomatis.</p>
+    <p><strong>Masa simpan:</strong> ruang duel dipakai ulang atau ditimpa setelah 24 jam. Keanggotaan dan poin klub disimpan per minggu dan dihapus otomatis oleh aplikasi setelah 8 minggu; sisa data klub lama dibersihkan secara berkala, paling lama 12 bulan. Laporan nama disimpan sampai selesai ditinjau, paling lama 12 bulan.</p>
+
+    <h2>Melaporkan dan menyembunyikan pemain</h2>
+    <p>Ketuk nama pemain atau klub lain (di Klub, Liga, atau Duel online) untuk melaporkannya atau menyembunyikannya. Laporan berisi jenis laporan, ID anonim pemain/klub yang dilaporkan, nama yang tampil, alasan, ID anonim Anda, dan waktunya. Laporan hanya dibaca pengembang untuk menghapus nama yang melanggar. Daftar nama yang Anda sembunyikan hanya disimpan di perangkat Anda.</p>
+
+    <h2>Cadangan dan simpan ke cloud</h2>
+    <p>Jika Anda memakai fitur cadangan di menu Pengaturan, aplikasi membuat file cadangan dan menyimpannya ke lokasi yang <strong>Anda pilih sendiri</strong> lewat pemilih file Android (misalnya Google Drive atau penyimpanan perangkat). Aplikasi hanya membaca file yang Anda pilih saat memulihkan data.</p>
+    <p>Android juga dapat mencadangkan data aplikasi secara otomatis ke akun Google Anda melalui fitur Cadangan Android. Cadangan ini dikelola oleh Google sesuai kebijakan privasi Google, dan dapat Anda matikan di pengaturan perangkat.</p>
+
+    <h2>Izin yang digunakan</h2>
+    <ul>
+      <li><strong>Internet</strong>: untuk iklan dan fitur online.</li>
+      <li><strong>ID iklan</strong>: untuk iklan AdMob (lihat bagian Iklan).</li>
+      <li><strong>Notifikasi</strong>: untuk mengirim pengingat Tantangan Harian. Anda bisa menolak atau mematikannya kapan saja.</li>
+      <li><strong>Berjalan saat perangkat dinyalakan</strong>: hanya untuk menjadwalkan ulang pengingat setelah perangkat dinyalakan ulang.</li>
+    </ul>
+
+    <h2>Dasar hukum pemrosesan (GDPR, UK GDPR, LGPD, dan sejenisnya)</h2>
+    <ul>
+      <li><strong>Iklan yang dipersonalisasi</strong>: persetujuan Anda, yang bisa ditarik kapan saja lewat Pengaturan → Pengaturan privasi iklan.</li>
+      <li><strong>Iklan non-personal, pengukuran iklan, dan pencegahan penipuan</strong>: kepentingan sah kami untuk membiayai aplikasi gratis dan mencegah penyalahgunaan.</li>
+      <li><strong>Klub online dan duel langsung</strong>: diperlukan untuk menjalankan fitur yang Anda minta.</li>
+      <li><strong>Laporan nama</strong>: kepentingan sah kami untuk menjaga komunitas tetap aman.</li>
+    </ul>
+
+    <h2>Transfer data ke luar negeri</h2>
+    <p>Server Firebase kami berada di Singapura, dan Google dapat memproses data di Amerika Serikat dan negara lain. Untuk data dari Eropa, Google memakai Klausul Kontrak Standar Komisi Eropa dan EU-U.S. Data Privacy Framework sebagai perlindungan.</p>
+
+    <h2>Hak Anda</h2>
+    <p>Sesuai hukum di negara Anda (misalnya GDPR di Eropa, UK GDPR, LGPD di Brasil, PDPA, UU PDP di Indonesia, atau undang-undang privasi negara bagian AS seperti CCPA/CPRA), Anda berhak meminta akses, salinan, koreksi, atau penghapusan data Anda, membatasi atau menolak pemrosesan, dan menarik persetujuan. Anda juga berhak mengadu ke otoritas perlindungan data di negara Anda. Kirim permintaan ke email di bagian Kontak; kami menjawab paling lambat 30 hari. Kami tidak menjual data pribadi Anda untuk uang. Di beberapa negara bagian AS, berbagi data dengan Google untuk iklan bertarget dapat dianggap "berbagi"; Anda dapat menolaknya lewat Pengaturan → Pengaturan privasi iklan (muncul di wilayah tersebut) atau dengan menghapus ID iklan.</p>
+
+    <h2>Berbagi data dengan pihak ketiga</h2>
+    <p>Data dibagikan hanya kepada Google sebagai penyedia iklan (AdMob) dan server (Firebase), seperti dijelaskan di atas. Kami tidak menjual data pribadi Anda. Jika Anda memakai tombol Bagikan untuk membagikan skor, teks tersebut dikirim lewat aplikasi yang Anda pilih dan tunduk pada kebijakan aplikasi tersebut.</p>
+
+    <h2>Anak-anak</h2>
+    <p>Sudoku tidak ditujukan khusus untuk anak di bawah 13 tahun. Iklan dibatasi ke konten yang cocok untuk umum (rating maksimum PG). Kami tidak dengan sengaja mengumpulkan data pribadi anak; bila Anda orang tua dan yakin anak Anda mengirim data lewat fitur online, hubungi kami agar data tersebut dihapus. Jika Anda di bawah usia persetujuan digital di negara Anda (13–16 tahun di Uni Eropa), mintalah orang tua menentukan pilihan di formulir persetujuan iklan.</p>
+
+    <h2>Menghapus data</h2>
+    <p>Anda dapat menghapus semua data di perangkat dengan menghapus data aplikasi di Pengaturan Android atau dengan mencopot pemasangan aplikasi. Untuk menghapus data online (nama panggilan, poin klub, ruang duel, dan akun anonim), buka <strong>Pengaturan → Hapus data online saya</strong>, atau kirim email ke kami. Data iklan yang dipegang Google dapat Anda kelola di <a href="https://myadcenter.google.com">My Ad Center</a>.</p>
+
+    <h2>Perubahan kebijakan</h2>
+    <p>Jika kebijakan ini berubah, versi terbaru akan dipasang di halaman ini dengan tanggal berlaku yang baru.</p>
+
+    <h2>Kontak</h2>
+    <p>Pertanyaan tentang kebijakan ini dapat dikirim ke <span class="email">rian.hadi.w@gmail.com</span>.</p>
+  </section>
+
+  <section data-lang="en" hidden>
+    <div class="summary"><p><strong>In short:</strong> Sudoku shows ads from Google AdMob to fund development. Google may use your device's advertising ID for those ads. The online features (clubs and live duels) send your nickname and points to our server on Google Firebase. We do not sell your personal data.</p></div>
+
+    <h2>Who we are</h2>
+    <p>Sudoku is made by ZidnySoft, an individual developer based in Indonesia, who is the data controller for the data described here. You can reach us by email under Contact.</p>
+
+    <h2>Data stored on your device</h2>
+    <p>So you can continue playing, the app stores the following on your device:</p>
+    <ul>
+      <li>Game progress, scores, statistics, achievements, and Arcade levels</li>
+      <li>Coins, items, and skins earned in the game</li>
+      <li>Settings such as language, theme, sound, and reminder time</li>
+    </ul>
+    <p>Photos you use for the puzzle Scan feature are processed on the device only and are never uploaded.</p>
+
+    <h2>Ads (Google AdMob)</h2>
+    <p>The app shows a banner on the menu, an occasional full-screen ad after you win, and rewarded ads that only play when you choose to watch one (for example for an extra hint or life). Ads are served by Google AdMob. To show and measure ads and to prevent fraud, the Google Mobile Ads SDK may collect:</p>
+    <ul>
+      <li>Your Android advertising ID and other Google app identifiers</li>
+      <li>IP address and approximate location (country/city) derived from it</li>
+      <li>Device information (model, Android version, language) and ad interactions, including SDK diagnostics and crash data</li>
+    </ul>
+    <p>This data goes directly to Google and is handled under the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from partner apps</a>. In the European Economic Area, the UK, Switzerland, and other regions that require it, the app first asks for your consent through Google's consent form, and you can change your choice at any time under Settings → Ad privacy settings. You can also reset or delete your advertising ID in Android Settings → Google → Ads.</p>
+
+    <h2>Online features (Google Firebase)</h2>
+    <p>Online clubs and live duels use Google Firebase (Authentication and Realtime Database, hosted in Singapore). If you use these features, the app creates an anonymous account (no email or real name) and stores on the server: the anonymous ID, the nickname you type, club name and code, weekly points, and duel room data (puzzle, progress, result). This data is used only to run those features. Nicknames and club names are visible to other players, so do not use your real name or personal details; offensive words in 14 languages are filtered automatically.</p>
+    <p><strong>Retention:</strong> duel rooms are reused or overwritten after 24 hours. Club membership and points are stored per week and deleted automatically by the app after 8 weeks; any remaining old club data is cleaned up periodically, within 12 months at most. Name reports are kept until reviewed, for at most 12 months.</p>
+
+    <h2>Reporting and hiding players</h2>
+    <p>Tap another player's or club's name (in Clubs, the League, or online Duels) to report or hide it. A report contains the report type, the anonymous ID of the reported player or club, the name shown, the reason, your anonymous ID, and the time. Reports are read only by the developer to remove names that break the rules. The list of names you hide is stored only on your device.</p>
+
+    <h2>Backup and cloud save</h2>
+    <p>If you use the backup feature in Settings, the app creates a backup file and saves it to a location <strong>you choose</strong> through the Android file picker (for example Google Drive or device storage). The app only reads the file you pick when restoring.</p>
+    <p>Android may also back up app data automatically to your Google account through Android Backup. That backup is handled by Google under Google's privacy policy, and you can turn it off in your device settings.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Internet</strong>: for ads and online features.</li>
+      <li><strong>Advertising ID</strong>: for AdMob ads (see Ads).</li>
+      <li><strong>Notifications</strong>: to send Daily Challenge reminders. You can deny or turn them off at any time.</li>
+      <li><strong>Run at startup</strong>: only to reschedule reminders after the device restarts.</li>
+    </ul>
+
+    <h2>Legal bases (GDPR, UK GDPR, LGPD, and similar laws)</h2>
+    <ul>
+      <li><strong>Personalized ads</strong>: your consent, which you can withdraw at any time under Settings → Ad privacy settings.</li>
+      <li><strong>Non-personalized ads, ad measurement, and fraud prevention</strong>: our legitimate interest in funding a free app and preventing abuse.</li>
+      <li><strong>Online clubs and live duels</strong>: necessary to provide the features you ask for.</li>
+      <li><strong>Name reports</strong>: our legitimate interest in keeping the community safe.</li>
+    </ul>
+
+    <h2>International transfers</h2>
+    <p>Our Firebase server is in Singapore, and Google may process data in the United States and other countries. For data from Europe, Google relies on the European Commission's Standard Contractual Clauses and the EU-U.S. Data Privacy Framework as safeguards.</p>
+
+    <h2>Your rights</h2>
+    <p>Depending on where you live (for example the GDPR in Europe, the UK GDPR, Brazil's LGPD, PDPA laws, Indonesia's PDP Law, or U.S. state privacy laws such as the CCPA/CPRA), you have the right to access, get a copy of, correct, or delete your data, to restrict or object to processing, and to withdraw consent. You also have the right to complain to the data protection authority in your country. Send requests to the email under Contact; we reply within 30 days. We do not sell your personal data for money. In some U.S. states, sharing data with Google for targeted advertising may count as "sharing"; you can opt out under Settings → Ad privacy settings (shown in those states) or by deleting your advertising ID.</p>
+
+    <h2>Sharing with third parties</h2>
+    <p>Data is shared only with Google as the ad provider (AdMob) and server provider (Firebase), as described above. We do not sell your personal data. If you use the Share button to share a score, that text is sent through the app you choose and is subject to that app's policies.</p>
+
+    <h2>Children</h2>
+    <p>Sudoku is not directed specifically at children under 13. Ads are limited to content suitable for general audiences (maximum rating PG). We do not knowingly collect personal data from children; if you are a parent and believe your child sent data through the online features, contact us and we will delete it. If you are under the age of digital consent in your country (13–16 in the European Union), ask a parent to make the choices in the ad consent form.</p>
+
+    <h2>Deleting your data</h2>
+    <p>You can delete all on-device data by clearing the app's storage in Android Settings or by uninstalling the app. To delete online data (nickname, club points, duel rooms, and the anonymous account), open <strong>Settings → Delete my online data</strong>, or email us. Ad data held by Google can be managed in <a href="https://myadcenter.google.com">My Ad Center</a>.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the latest version will be posted on this page with a new effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy can be sent to <span class="email">rian.hadi.w@gmail.com</span>.</p>
+  </section>
+
+  <footer>© 2026 ZidnySoft</footer>
+</main>
+
+<script>
+(function(){
+  function set(l){
+    document.querySelectorAll('[data-lang]').forEach(function(e){e.hidden=e.getAttribute('data-lang')!==l});
+    document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l))});
+    document.documentElement.lang=l;
+  }
+  document.querySelectorAll('.lang button').forEach(function(b){b.addEventListener('click',function(){set(b.dataset.set)})});
+  var start=(location.hash==='#en'||(!location.hash&&(navigator.language||'').slice(0,2)!=='id'&&(navigator.language||'').slice(0,2)!=='ms'))?'en':'id';
+  set(start);
+})();
+</script>
