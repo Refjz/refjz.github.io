@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kebijakan Privasi Macro Pintar / Privacy Policy</title>
+<style>body{max-width:760px;margin:0 auto;padding:24px 16px 64px;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1a1c22}h1{line-height:1.25}h2{margin-top:1.8em}nav a{margin-right:16px}hr{margin:48px 0}</style>
+</head><body>
+<nav><a href="#id">Bahasa Indonesia</a><a href="#en">English</a><a href="#hapus-data">Hapus data</a><a href="#delete-data">Delete data</a></nav>
+
+<!-- ===================== BAHASA INDONESIA ===================== -->
+<section id="id" lang="id">
+<h1>Kebijakan Privasi Macro Pintar</h1>
+<p><b>Berlaku sejak:</b> 25 November 2026<br><b>Aplikasi:</b> Macro Pintar (com.macropintar)<br><b>Pengendali data:</b> pengembang Macro Pintar<br><b>Kontak:</b> <a href="mailto:rian.hadi.w@gmail.com">rian.hadi.w@gmail.com</a></p>
+
+<p>Macro Pintar adalah aplikasi otomatisasi (macro) untuk Android. Kebijakan ini menjelaskan data apa yang diakses aplikasi, untuk apa, dan ke mana data itu dikirim. Singkatnya: <b>kami tidak punya server, tidak meminta akun, tidak memasang iklan, dan tidak memakai analitik atau pelacak.</b> Semua data disimpan di HP kamu, kecuali kamu sendiri mengaktifkan fitur yang mengirim data ke layanan pilihanmu. Kebijakan ini berlaku untuk pengguna di semua negara.</p>
+
+<h2 id="hapus-data">Cara menghapus data</h2>
+<p>Macro Pintar tidak punya akun dan tidak menyimpan data kamu di server. Untuk menghapus semua data:</p>
+<ol>
+<li>Data di HP: Pengaturan Android → Aplikasi → Macro Pintar → Penyimpanan → <b>Hapus data</b>, atau copot aplikasinya.</li>
+<li>Backup Google Drive (kalau pernah disambungkan): buka drive.google.com → Setelan → <b>Kelola aplikasi</b> → Macro Pintar → Opsi → <b>Hapus data aplikasi tersembunyi</b>.</li>
+<li>Data yang sudah kamu kirim ke penyedia AI, Telegram, atau webhook diatur oleh layanan tersebut; hapus lewat akunmu di sana.</li>
+<li>Butuh bantuan? Kirim email ke <a href="mailto:rian.hadi.w@gmail.com">rian.hadi.w@gmail.com</a>; permintaan dibalas dalam 30 hari.</li>
+</ol>
+
+<h2>1. Layanan Aksesibilitas</h2>
+<p>Macro Pintar memakai API Layanan Aksesibilitas Android (AccessibilityService) untuk fungsi utamanya, yaitu menjalankan macro yang kamu buat:</p>
+<ul>
+<li>membaca isi layar (teks, ID, dan deskripsi tombol) supaya macro bisa menemukan tombol yang benar;</li>
+<li>melakukan ketukan, geser, dan tombol navigasi atas nama kamu saat macro berjalan;</li>
+<li>merekam ketukanmu saat kamu menekan tombol Rekam (isi kolom kata sandi tidak pernah direkam);</li>
+<li>mengambil screenshot untuk pengenalan teks (OCR) dan pencarian gambar/ikon;</li>
+<li>membaca notifikasi yang masuk, termasuk isi SMS dan kode OTP, hanya bila kamu membuat pemicu notifikasi atau SMS. Isi notifikasi dicocokkan dengan pemicu di HP; kode OTP bisa disalin ke clipboard atau diketik oleh macro bila kamu mengaturnya.</li>
+</ul>
+<p>Data ini hanya diproses saat kamu menjalankan, menguji, atau merekam macro, dan saat jadwal atau pemicu yang kamu buat sendiri berjalan. OCR berjalan di HP memakai Google ML Kit. Untuk aksara Cina, Jepang, Korea, dan Devanagari, model OCR diunduh oleh layanan Google Play saat pertama dipakai; gambar layar tetap diproses di HP. Data dari layanan aksesibilitas tidak dijual, tidak dipakai untuk iklan, dan tidak dikirim ke mana pun, kecuali lewat fitur opsional di bagian 3 yang kamu aktifkan sendiri.</p>
+
+<h2>2. Data yang disimpan di HP</h2>
+<ul>
+<li>Macro, jadwal, pemicu, variabel, dan pengaturan.</li>
+<li>Riwayat jalan: log, durasi, dan screenshot saat macro gagal (maksimal 100 terakhir).</li>
+<li>Gambar/ikon template yang kamu simpan atau impor dari galeri.</li>
+<li>Saran kebiasaan (opsional, bisa dimatikan): pola ketukan yang kamu ulangi.</li>
+<li>Lokasi: hanya dipakai bila kamu membuat pemicu "tiba di / pergi dari lokasi". Lokasi dicek di HP, termasuk saat aplikasi ditutup (izin lokasi latar belakang), dibandingkan dengan titik pemicu, lalu dibuang. Tidak disimpan maupun dikirim ke luar.</li>
+<li>Nama Wi-Fi dan nama perangkat Bluetooth: hanya untuk mengecek pemicu "Wi-Fi tersambung" atau "Bluetooth tersambung" di HP.</li>
+<li>API key penyedia AI dan token bot Telegram yang kamu isi.</li>
+</ul>
+<p>Data ini terhapus saat kamu menghapus aplikasi atau membersihkan datanya.</p>
+
+<h2>3. Fitur opsional yang mengirim data</h2>
+<p>Fitur di bawah ini mati secara bawaan dan hanya mengirim data setelah kamu mengaktifkan atau memakainya:</p>
+<ul>
+<li><b>Asisten AI</b> (buat macro dari kalimat, bantu saat macet, perbaikan selector): teks perintahmu, isi teks layar, dan bisa juga screenshot layar dikirim ke penyedia AI yang kamu pilih dengan API key milikmu sendiri: Anthropic (Claude), OpenAI atau server yang kompatibel, Google (Gemini), atau server Ollama milikmu. Data itu tunduk pada kebijakan privasi penyedia tersebut. Pilihan AI lokal berjalan sepenuhnya di HP; file modelnya kamu unduh sendiri (misalnya dari Hugging Face).</li>
+<li><b>Backup Google Drive:</b> bila kamu menyambungkan akun Google, macro dan jadwalnya disimpan di folder data aplikasi tersembunyi di Google Drive milikmu (izin <code>drive.appdata</code>; aplikasi tidak bisa melihat file Drive lainnya). Kamu bisa memutus sambungan kapan saja di Pengaturan aplikasi atau di akun Google-mu.</li>
+<li><b>Perintah suara:</b> mikrofon hanya menyala beberapa detik setelah kamu menekan tombol 🎤 atau menggoyang HP (bila pemicu itu kamu aktifkan). Suara diubah menjadi teks oleh layanan pengenalan suara di HP-mu (biasanya Google); aplikasi meminta pemrosesan offline bila tersedia. Rekaman suara tidak disimpan oleh Macro Pintar.</li>
+<li><b>Notifikasi webhook / Telegram / laporan harian:</b> ringkasan hasil, log, dan (bila diminta) screenshot dikirim ke alamat webhook atau bot Telegram yang kamu atur.</li>
+<li><b>Langkah HTTP</b> di dalam macro: mengirim permintaan ke alamat yang kamu tulis sendiri.</li>
+<li><b>Remote lewat Wi-Fi:</b> halaman web di jaringan lokal untuk melihat status, log, dan screenshot. Hanya bisa diakses perangkat di jaringan yang sama.</li>
+<li><b>Layanan Shell</b> (Debug Nirkabel): sambungan hanya ke HP itu sendiri, tidak ke internet.</li>
+<li><b>Galeri komunitas:</b> daftar macro diunduh dari GitHub (GitHub dapat melihat alamat IP-mu). Mengirim atau melaporkan macro membuka formulir issue GitHub publik dengan akun GitHub-mu sendiri; isi yang kamu kirim terlihat publik.</li>
+<li><b>Ekspor, backup ke folder, link/QR, dan Lapor bug:</b> file macro, backup, atau zip laporan (log, riwayat, macro, dan info HP, tanpa API key) hanya dibagikan ke tujuan yang kamu pilih sendiri.</li>
+<li><b>Pindai QR</b> memakai Google Code Scanner dari layanan Google Play.</li>
+</ul>
+
+<h2>4. Izin lain</h2>
+<p>Notifikasi (hasil macro), mulai saat HP menyala dan saat zona waktu berubah (jadwal), wake lock (menjaga layar menyala saat macro jalan), menutup proses latar (langkah "tutup aplikasi"), Bluetooth dan Wi-Fi (pemicu dan aksi), serta mikrofon (perintah suara). Semuanya hanya dipakai untuk fungsi tersebut.</p>
+
+<h2>5. Dasar pemrosesan dan hak kamu</h2>
+<p>Untuk pengguna di Uni Eropa/EEA, Inggris, Swiss, Brasil (LGPD), California (CCPA/CPRA), Indonesia (UU PDP No. 27/2022), dan wilayah lain dengan aturan serupa:</p>
+<ul>
+<li><b>Dasar pemrosesan:</b> pelaksanaan fitur yang kamu minta (menjalankan macro, pemicu, backup) dan persetujuanmu (izin Aksesibilitas, lokasi, mikrofon, fitur AI). Persetujuan bisa ditarik kapan saja dengan mematikan izin atau fitur tersebut.</li>
+<li><b>Hak akses, koreksi, hapus, dan portabilitas:</b> karena data hanya ada di HP-mu, kamu bisa melihat, mengubah, mengekspor (Ekspor/Backup), dan menghapusnya sendiri (hapus macro, bersihkan data aplikasi, atau copot aplikasi). Backup Drive bisa dihapus dari Google Drive (drive.google.com → Setelan → Kelola aplikasi → Macro Pintar → Hapus data aplikasi tersembunyi). Kami tidak menyimpan salinan apa pun.</li>
+<li><b>Tidak ada penjualan atau berbagi untuk iklan:</b> kami tidak menjual dan tidak "membagikan" data pribadi dalam pengertian CCPA/CPRA.</li>
+<li><b>Pengaduan:</b> kamu berhak mengadu ke otoritas perlindungan data di negaramu.</li>
+</ul>
+
+<h2>6. Transfer ke luar negeri</h2>
+<p>Bila kamu memakai fitur di bagian 3, data dikirim langsung dari HP-mu ke penyedia yang kamu pilih, yang servernya bisa berada di luar negaramu (misalnya Amerika Serikat). Transfer itu diatur oleh kebijakan dan perjanjian perlindungan data penyedia tersebut.</p>
+
+<h2>7. Keamanan dan penyimpanan</h2>
+<p>Data disimpan di penyimpanan internal aplikasi yang dilindungi sistem Android. Riwayat dibatasi 100 jalan terakhir; data lain disimpan sampai kamu menghapusnya.</p>
+
+<h2>8. Anak-anak</h2>
+<p>Aplikasi ini tidak ditujukan untuk anak di bawah 13 tahun (di bawah 16 tahun di EEA dan Inggris) dan tidak sengaja mengumpulkan data mereka.</p>
+
+<h2>9. Perubahan</h2>
+<p>Kebijakan ini bisa diperbarui. Tanggal di atas akan diganti setiap ada perubahan, dan perubahan penting akan diberitahukan di catatan rilis aplikasi.</p>
+
+<h2>10. Kontak</h2>
+<p>Pertanyaan atau permintaan soal privasi: <a href="mailto:rian.hadi.w@gmail.com">rian.hadi.w@gmail.com</a></p>
+</section>
+
+<hr>
+
+<!-- ===================== ENGLISH ===================== -->
+<section id="en" lang="en">
+<h1>Macro Pintar Privacy Policy</h1>
+<p><b>Effective date:</b> November 25, 2026<br><b>App:</b> Macro Pintar (com.macropintar)<br><b>Data controller:</b> the developer of Macro Pintar<br><b>Contact:</b> <a href="mailto:rian.hadi.w@gmail.com">rian.hadi.w@gmail.com</a></p>
+
+<p>Macro Pintar is an automation (macro) app for Android. This policy explains what data the app accesses, why, and where it goes. In short: <b>we have no servers, require no account, show no ads, and use no analytics or trackers.</b> All data stays on your phone unless you turn on a feature that sends data to a service you choose. This policy applies to users in every country.</p>
+
+<h2 id="delete-data">How to delete your data</h2>
+<p>Macro Pintar has no accounts and keeps none of your data on a server. To delete everything:</p>
+<ol>
+<li>Data on the phone: Android Settings → Apps → Macro Pintar → Storage → <b>Clear data</b>, or uninstall the app.</li>
+<li>Google Drive backup (if you connected it): go to drive.google.com → Settings → <b>Manage apps</b> → Macro Pintar → Options → <b>Delete hidden app data</b>.</li>
+<li>Data you already sent to an AI provider, Telegram or a webhook is governed by that service; delete it through your account there.</li>
+<li>Need help? Email <a href="mailto:rian.hadi.w@gmail.com">rian.hadi.w@gmail.com</a>; requests are answered within 30 days.</li>
+</ol>
+
+<h2>1. Accessibility Service</h2>
+<p>Macro Pintar uses the Android Accessibility Service API (AccessibilityService) for its core function, running the macros you create:</p>
+<ul>
+<li>reading screen content (text, IDs and button descriptions) so a macro can find the right button;</li>
+<li>performing taps, swipes and navigation buttons on your behalf while a macro runs;</li>
+<li>recording your taps when you press Record (password fields are never recorded);</li>
+<li>taking screenshots for on-device text recognition (OCR) and image/icon search;</li>
+<li>reading incoming notifications, including SMS text and OTP codes, only if you create a notification or SMS trigger. Notification content is matched against your trigger on the phone; an OTP code can be copied to the clipboard or typed by the macro if you set it up that way.</li>
+</ul>
+<p>This data is only processed while you run, test or record a macro, and when a schedule or trigger you created fires. OCR runs on the device using Google ML Kit. For Chinese, Japanese, Korean and Devanagari scripts, the OCR model is downloaded by Google Play services the first time it is needed; screen images are still processed on the device. Accessibility data is never sold, never used for advertising, and never sent anywhere except through the optional features in section 3 that you turn on yourself.</p>
+
+<h2>2. Data stored on your phone</h2>
+<ul>
+<li>Macros, schedules, triggers, variables and settings.</li>
+<li>Run history: logs, durations and a screenshot when a macro fails (last 100 runs at most).</li>
+<li>Template images/icons you save or import from your gallery.</li>
+<li>Habit suggestions (optional, can be turned off): tap patterns you repeat.</li>
+<li>Location: used only if you create an "arrive at / leave a place" trigger. Location is checked on the phone, including while the app is closed (background location permission), compared with the trigger point, and then discarded. It is neither stored nor sent anywhere.</li>
+<li>Wi‑Fi network name and Bluetooth device name: used only to check "Wi‑Fi connected" or "Bluetooth connected" triggers on the phone.</li>
+<li>AI provider API keys and Telegram bot token that you enter.</li>
+</ul>
+<p>This data is deleted when you uninstall the app or clear its data.</p>
+
+<h2>3. Optional features that send data</h2>
+<p>The features below are off by default and only send data after you turn them on or use them:</p>
+<ul>
+<li><b>AI assistant</b> (create macros from a sentence, help when stuck, selector repair): your request, the screen text, and possibly a screenshot are sent to the AI provider you choose, using your own API key: Anthropic (Claude), OpenAI or a compatible server, Google (Gemini), or your own Ollama server. That data is subject to the provider's privacy policy. The local AI option runs entirely on the phone; you download the model file yourself (for example from Hugging Face).</li>
+<li><b>Google Drive backup:</b> if you connect a Google account, your macros and their schedules are stored in a hidden app-data folder in your own Google Drive (<code>drive.appdata</code> scope; the app cannot see your other Drive files). You can disconnect at any time in the app's settings or in your Google account.</li>
+<li><b>Voice commands:</b> the microphone is only on for a few seconds after you press the 🎤 button or shake the phone (if you enabled that trigger). Speech is turned into text by your phone's speech recognition service (usually Google); the app asks for offline processing when available. Macro Pintar does not store voice recordings.</li>
+<li><b>Webhook / Telegram / daily-report notifications:</b> a result summary, logs and (if requested) a screenshot are sent to the webhook URL or Telegram bot you set up.</li>
+<li><b>HTTP step</b> in a macro: sends a request to an address you write yourself.</li>
+<li><b>Wi‑Fi remote:</b> a web page on your local network to see status, logs and screenshots. Only devices on the same network can reach it.</li>
+<li><b>Shell service</b> (Wireless debugging): connects only to the phone itself, not to the internet.</li>
+<li><b>Community gallery:</b> the macro list is downloaded from GitHub (GitHub can see your IP address). Submitting or reporting a macro opens a public GitHub issue form with your own GitHub account; what you submit is public.</li>
+<li><b>Export, folder backup, link/QR and Report a bug:</b> macro files, backups or a report zip (logs, history, macros and device info, without API keys) are shared only with the destination you choose.</li>
+<li><b>QR scanning</b> uses Google Code Scanner from Google Play services.</li>
+</ul>
+
+<h2>4. Other permissions</h2>
+<p>Notifications (macro results), start at boot and on time-zone change (schedules), wake lock (keeps the screen on while a macro runs), kill background processes ("close app" step), Bluetooth and Wi‑Fi (triggers and actions), and microphone (voice commands). Each is used only for that function.</p>
+
+<h2>5. Legal basis and your rights</h2>
+<p>For users in the EU/EEA, the UK, Switzerland, Brazil (LGPD), California (CCPA/CPRA), Indonesia (PDP Law No. 27/2022) and other places with similar laws:</p>
+<ul>
+<li><b>Legal basis:</b> performing the features you ask for (running macros, triggers, backups) and your consent (Accessibility, location, microphone, AI features). You can withdraw consent at any time by turning off that permission or feature.</li>
+<li><b>Access, correction, deletion and portability:</b> because the data only lives on your phone, you can view, change, export (Export/Backup) and delete it yourself (delete macros, clear app data, or uninstall). A Drive backup can be deleted in Google Drive (drive.google.com → Settings → Manage apps → Macro Pintar → Delete hidden app data). We keep no copy of anything.</li>
+<li><b>No sale or sharing for ads:</b> we do not sell or "share" personal information as defined by the CCPA/CPRA.</li>
+<li><b>Complaints:</b> you have the right to complain to the data protection authority in your country.</li>
+</ul>
+
+<h2>6. International transfers</h2>
+<p>When you use a feature in section 3, data goes directly from your phone to the provider you choose, whose servers may be outside your country (for example in the United States). Those transfers are governed by that provider's data protection policies and agreements.</p>
+
+<h2>7. Security and retention</h2>
+<p>Data is kept in the app's internal storage, protected by the Android system. History is limited to the last 100 runs; other data is kept until you delete it.</p>
+
+<h2>8. Children</h2>
+<p>The app is not directed at children under 13 (under 16 in the EEA and the UK) and does not knowingly collect their data.</p>
+
+<h2>9. Changes</h2>
+<p>This policy may be updated. The date above changes with every update, and important changes are mentioned in the app's release notes.</p>
+
+<h2>10. Contact</h2>
+<p>Privacy questions or requests: <a href="mailto:rian.hadi.w@gmail.com">rian.hadi.w@gmail.com</a></p>
+</section>
+</body></html>
